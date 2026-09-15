@@ -42,6 +42,10 @@ yonda <thread-url> [--sort best|top|new|controversial|old|qa] [--limit N]
 
 share links (`/s/`) and old.reddit urls work too. `--limit` caps how many comments reddit returns (default 500); deeper cuts show up as `(+N more not fetched)`.
 
+## for your agents
+
+`skills/yonda/` has an agent skill (claude code format) - symlink it into `~/.claude/skills/` or wherever your harness looks, and your agent learns to reach for yonda instead of ritually knocking on reddit's dead doors with a fetch tool.
+
 ## what it doesn't do
 
 post, comment, vote, or write anything. there is no POST in the binary.
