@@ -29,8 +29,8 @@ then give it your session cookie, once:
 1. open reddit in your browser, logged in
 2. F12 → Application (chrome) or Storage (firefox) → Cookies → `https://www.reddit.com`
 3. copy the value of `reddit_session`
-4. paste it into `~/.config/yonda/session` (just the raw value)
-5. `chmod 600 ~/.config/yonda/session`
+4. `mkdir -p ~/.config/yonda && install -m 600 /dev/null ~/.config/yonda/session`
+5. paste the raw value into `~/.config/yonda/session`
 
 the cookie lives until you log out in that browser, so this is close to a one-time thing. if yonda starts answering 403, re-paste it.
 
